@@ -85,7 +85,7 @@ public class JRSpinner extends android.support.v7.widget.AppCompatEditText {
     private void init(AttributeSet attrs) {
         setLongClickable(false);
         setFocusable(false);
-        setSingleLine(true);
+        setSingleLine(false);
         expandTint = ContextCompat.getColor(getContext(), R.color.jrspinner_color_default);
         if (attrs != null) {
             TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.JRSpinner);
